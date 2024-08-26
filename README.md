@@ -91,3 +91,5 @@ animation 이용해서 실습한 내용
     <div class="cat"></div>
   </body>
 </html>
+
+![move-cat](https://github.com/user-attachments/assets/6346356a-dbd4-4dca-bba2-d5687cd75402)
