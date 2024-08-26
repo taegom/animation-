@@ -93,3 +93,39 @@ animation 이용해서 실습한 내용
 </html>
 
 ![move-cat](https://github.com/user-attachments/assets/6346356a-dbd4-4dca-bba2-d5687cd75402)
+
+3. cafe
+   <!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cafe건물 올라오는 애니메이션</title>
+    <style>
+      .cafe {
+        width: 116px;
+        height: 180px;
+        background-image: url(./images/cafe.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+
+        animation-name: move-cafe;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-timing-function: steps(33);
+      }
+
+      @keyframes move-cafe {
+        100% {
+          background-position: right top;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cafe"></div>
+  </body>
+</html>
+
