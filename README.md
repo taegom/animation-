@@ -129,3 +129,85 @@ animation 이용해서 실습한 내용
   </body>
 </html>
 
+![move-cafe](https://github.com/user-attachments/assets/708fe9c1-4909-47d3-a10f-28b114b3582e)
+
+4. 시계
+   <!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>시계 실습</title>
+    <style>
+      .container {
+        width: 300px;
+        height: 300px;
+        background-color: rgb(62, 111, 172);
+        border-radius: 90px;
+        position: relative;
+      }
+
+      .sec {
+        width: 10px;
+        height: 130px;
+        background-color: brown;
+        z-index: 100;
+        position: absolute;
+        top: calc(50% - 130px);
+        left: calc(50% - 10px);
+        transform-origin: bottom;
+
+        animation-name: move-clock;
+        animation-iteration-count: infinite;
+        animation-duration: 60s;
+        animation-timing-function: steps(60);
+      }
+
+      .min {
+        width: 12px;
+        height: 110px;
+        background-color: black;
+        z-index: 200;
+        position: absolute;
+        top: calc(50% - 110px);
+        left: calc(50% - 10px);
+        transform-origin: bottom;
+        animation-name: move-clock;
+        animation-iteration-count: infinite;
+        animation-duration: 120s;
+      }
+
+      .hour {
+        width: 14px;
+        height: 100px;
+        background-color: salmon;
+        z-index: 300;
+        position: absolute;
+        top: calc(50% - 100px);
+        left: calc(50% - 10px);
+        transform-origin: bottom;
+        animation-name: move-clock;
+        animation-iteration-count: infinite;
+        animation-duration: 240s;
+      }
+
+      @keyframes move-clock {
+        from {
+          transform: rotate(0);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article class="container">
+      <div class="sec"></div>
+      <div class="min"></div>
+      <div class="hour"></div>
+    </article>
+  </body>
+</html>
+
