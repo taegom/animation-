@@ -33,3 +33,6 @@ animation 이용해서 실습한 내용
     <div class="licat"></div>
   </body>
 </html>
+
+![move-licat](https://github.com/user-attachments/assets/efd4b617-62d8-48ae-bc0b-c954b099044a)
+
